@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800,900');
+@mixin bgimgproperties{
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+  }
+  label {
+    width: 100%;
+  }
+  span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  #services {
+    .col-sm-5 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .blog-a {
+    a {
+      font-size: 1.65rem;
+    }
+  }
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+  }
+  span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  #services {
+    h1 {
+      position: absolute;
+      top : 50%;
+      -ms-transform: translate(5%, -50%);
+      transform: translate(5%, -50%);
+    }
+    .col-sm-5 {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .blog-a {
+    a {
+      font-size: .85rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 24px;
+  }
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+button {
+  text-transform: uppercase;
+  color: #fff;
+  padding: .5rem 1rem;
+}
+br {
+   line-height: 10%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+h4 {
+  font-weight: 700;
+}
+input, textarea {
+  width: 100%;
+}
+#home {
+  background-image: url("../images/homebg.png");
+  position: relative;
+  @include bgimgproperties;
+  .col-sm-4 {
+    margin-top: 12rem;
+    margin-bottom: 17rem;
+  }
+}
+#about {
+  background-image: url("../images/aboutbg.png");
+  @include bgimgproperties;
+  .col-sm-5, .col-6 {
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+  }
+}
+#services {
+  background-image: url("../images/servicesbg.png");
+  @include bgimgproperties;
+
+  .label {
+    border: 1px solid grey;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    img {
+      border-left: 1px solid grey;
+      max-width: 90%;
+      padding: 1rem;
+    }
+    span {
+     position: absolute;
+      top : 50%;
+      -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+      margin-left: .25rem;
+      margin-right: 2.25rem;
+      display: inline-block;
+    }
+  }
+}
+#gallery {
+  background-color: #ffe92f;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+#subscribe {
+  background-image: url("../images/subbg.png");
+  @include bgimgproperties;
+  .col-5, .col-6 {
+    margin-bottom: 3rem;
+  }
+}
+#blog {
+  background-color: #b07cf7;
+  .col-sm-4 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.blog-date {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  background: rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+}
+.blog-a{
+    position: absolute;
+    top: 70%;
+  a{
+    color: #fff;
+    font-weight: 600;
+  }
+}
+#contact {
+  background-image: url("../images/contactbg.png");
+  @include bgimgproperties;
+  input, textarea {
+    background-color: #77dbdc;
+    border: none;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #fff;
+    font-weight: 500;
+    font-size: .9rem;
+  }
+}
+#footer {
+  background-color: #262626;
+}
+.btn-org {
+  background-color: #ff6033;
+  border: 1px solid orange;
+}
+.btn-blue {
+  background-color: #5585a2;
+  border: 1px solid blue
+}
+.btn-green {
+  background-color: #96b92c;
+  border: 1px solid green;
+}
+.btn-red {
+  background-color: #f72b3b;
+  border: 1px solid red;
+}
+.force-to-bottom {
+  position:absolute;
+  bottom: 0;
+}
+.input-message {
+  height: 100px;
+}
+.navbar {
+  text-transform: uppercase;
+  background-color: #fff;
+  a{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: .25rem;
+    padding-left: .25rem;
+    color: #000;
+    font-weight: 700;
+  }
+  a:hover {
+    border-top: 3px solid #ff6033;
+  }
+}
+.span-wht, .h1-wht {
+  color: #fff;
+}
+.span-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.span-serv {
+  font-weight: 700;
+}
+.span-grey {
+  color: #b9b9b9;
+  font-size: .9rem;
+}
+.span-love {
+  color: #ff2b58;
+  font-size: .9rem;
+}
